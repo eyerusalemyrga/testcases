@@ -1,14 +1,13 @@
-// To run: npm install jest jsdom --save-dev
-// Add "test": "jest" to package.json
+
 
 describe('Menu Toggle Functionality', () => {
     beforeEach(() => {
-        // Set up DOM
+        
         document.body.innerHTML = `
             <ul class="nav-links" id="navLinks"></ul>
             <div class="hamburger"></div>
         `;
-        // Load the script
+      
         require('./service.js');
     });
 
@@ -24,7 +23,7 @@ describe('Menu Toggle Functionality', () => {
     it('closes menu when clicking outside', () => {
         const navLinks = document.getElementById('navLinks');
         navLinks.classList.add('show');
-        // Simulate click outside nav
+       
         const evt = new window.Event('click', { bubbles: true });
         document.body.dispatchEvent(evt);
         expect(navLinks.classList.contains('show')).toBe(false);
