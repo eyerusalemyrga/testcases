@@ -3,14 +3,14 @@ function signup() {
   const password = document.getElementById("signup-password").value;
   const messageDiv = document.getElementById("message");
 
-  // Validation
+ 
   if (!username || !password) {
     messageDiv.textContent = "Please fill in all fields.";
     messageDiv.className = "";
     return;
   }
 
-  // Check if user already exists
+  
   const existingUser = localStorage.getItem("user:" + username);
   if (existingUser) {
     messageDiv.textContent = "Username already taken.";
@@ -18,16 +18,15 @@ function signup() {
     return;
   }
 
-  // Save user (for demo purposes only, not secure!)
+ 
   localStorage.setItem("user:" + username, JSON.stringify({ username, password }));
   messageDiv.textContent = "Signup successful!";
   messageDiv.className = "success";
 
-  // Optionally clear form
   document.getElementById("signupForm").reset();
 }
 
-// For Jest test compatibility
+
 if (typeof module !== "undefined") {
   module.exports = { signup };
 }
