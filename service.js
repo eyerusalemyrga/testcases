@@ -3,10 +3,10 @@ function toggleMenu() {
     navLinks.classList.toggle("show");
 }
 
-// Attach function to window for testing and global access
+
 window.toggleMenu = toggleMenu;
 
-// Optional: Close nav menu when clicking outside (mobile)
+
 document.addEventListener('click', function(event) {
     const navLinks = document.getElementById('navLinks');
     const hamburger = document.querySelector('.hamburger');
