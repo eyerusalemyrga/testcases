@@ -1,6 +1,4 @@
-// Basic test using Jest and jsdom (for demonstration purposes only)
-// To run: npm install jest jsdom --save-dev
-// Add "test": "jest" to package.json scripts
+
 
 describe('Gallery Navigation', () => {
   document.body.innerHTML = `
