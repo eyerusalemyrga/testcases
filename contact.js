@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      // Simulate form submission (e.g., send to server)
       messageDiv.textContent = `Thank you, ${name} from ${location}, for contacting us!`;
       messageDiv.style.color = "#00FF99";
       form.reset();
