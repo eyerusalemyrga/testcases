@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form id="signupForm" onsubmit="event.preventDefault(); signup();">
+      <label for="signup-username">Username:</label>
+      <input type="text" id="signup-username" required>
+      <label for="signup-password">Password:</label>
+      <input type="password" id="signup-password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div id="message"></div>
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>

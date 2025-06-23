@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
+  <section class="gallery">
+    <h2 id="gallery">Gallery</h2>
+    <p>From junk to valuable materials</p>
+    <!-- Row 1 -->
+    <div class="scroll-row">
+      <button class="arrow-btn left-arrow" onclick="scrollLeft('row1')"><i class="fas fa-angle-left"></i></button>
+      <div class="image-container" id="row1">
+        <img src="gallery/hom1.jpeg" alt="Home 1">
+        <img src="gallery/hom2.jpeg" alt="Home 2">
+        <img src="gallery/hom3.jpeg" alt="Home 3">
+        <img src="gallery/hom4.jpeg" alt="Home 4">
+        <img src="gallery/hom5.jpeg" alt="Home 5">
+        <img src="gallery/home6.jpeg" alt="Home 6">
+        <img src="gallery/hom7.jpeg" alt="Home 7">
+        <img src="gallery/hom8.jpeg" alt="Home 8">
+        <img src="gallery/hom9.jpeg" alt="Home 9">
+        <img src="gallery/hom10.jpeg" alt="Home 10">
+        <img src="gallery/hom11.jpeg" alt="Home 11">
+      </div>
+      <button class="arrow-btn right-arrow" onclick="scrollRight('row1')"><i class="fas fa-angle-right"></i></button>
+    </div>
+    <!-- Row 2 -->
+    <div class="scroll-row">
+      <button class="arrow-btn left-arrow" onclick="scrollLeft('row2')"><i class="fas fa-angle-left"></i></button>
+      <div class="image-container" id="row2">
+        <img src="gallery/fas1.jpeg" alt="Fashion 1">
+        <img src="gallery/fas2.jpeg" alt="Fashion 2">
+        <img src="gallery/fas3.jpeg" alt="Fashion 3">
+        <img src="gallery/fas4.jpeg" alt="Fashion 4">
+        <img src="gallery/fas5.jpeg" alt="Fashion 5">
+        <img src="gallery/fas7.jpeg" alt="Fashion 7">
+        <img src="gallery/fas10.jpeg" alt="Fashion 10">
+        <img src="gallery/fas11.jpeg" alt="Fashion 11">
+        <img src="gallery/fas12.jpeg" alt="Fashion 12">
+        <img src="gallery/fas13.jpeg" alt="Fashion 13">
+        <img src="gallery/fas15.jpeg" alt="Fashion 15">
+      </div>
+      <button class="arrow-btn right-arrow" onclick="scrollRight('row2')"><i class="fas fa-angle-right"></i></button>
+    </div>
+    <!-- Row 3 -->
+    <div class="scroll-row">
+      <button class="arrow-btn left-arrow" onclick="scrollLeft('row3')"><i class="fas fa-angle-left"></i></button>
+      <div class="image-container" id="row3">
+        <img src="gallery/bag1.jpeg" alt="Bag 1">
+        <img src="gallery/bag2.jpeg" alt="Bag 2">
+        <img src="gallery/bag3.jpeg" alt="Bag 3">
+        <img src="gallery/bag4.jpeg" alt="Bag 4">
+        <img src="gallery/bag5.jpeg" alt="Bag 5">
+        <img src="gallery/bag6.jpeg" alt="Bag 6">
+        <img src="gallery/bag7.jpeg" alt="Bag 7">
+        <img src="gallery/bag9.jpeg" alt="Bag 9">
+        <img src="gallery/bag10.jpeg" alt="Bag 10">
+      </div>
+      <button class="arrow-btn right-arrow" onclick="scrollRight('row3')"><i class="fas fa-angle-right"></i></button>
+    </div>
+  </section>
+  <script src="gallery.js"></script>
+</body>
+</html>

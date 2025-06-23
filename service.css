@@ -1,0 +1,126 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+header {
+    background: white;
+    padding: 1rem;
+    color: orange;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    cursor: pointer;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: orange;
+    font-size: 1rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    background: orange;
+    color: white;
+}
+
+.hamburger {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.heading {
+    text-align: center;
+    color: orange;
+    font-size: 2.75rem;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.our-services {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.service-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 1.2rem;
+}
+
+.service-img img {
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.service-text h4 {
+    margin: 0.5rem 0;
+    color: orange;
+    font-size: 1.3rem;
+}
+
+.service-text p {
+    font-size: 1rem;
+    margin: 0.3rem 0 0 0;
+}
+
+@media (max-width: 1023px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 1rem;
+        top: 58px;
+        background: white;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        z-index: 10;
+    }
+    .nav-links.show {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .our-services {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .heading {
+        font-size: 2rem;
+    }
+}

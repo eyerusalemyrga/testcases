@@ -1,0 +1,26 @@
+{
+  "name": "testcases",
+  "version": "1.0.0",
+  "description": "",
+  "main": "menu.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyerusalemyrga/testcases.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyerusalemyrga/testcases/issues"
+  },
+  "homepage": "https://github.com/eyerusalemyrga/testcases#readme",
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "devDependencies": {
+    "jest-environment-jsdom": "^30.0.2"
+  }
+}

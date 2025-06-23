@@ -1,0 +1,219 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+}
+
+.b-image {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+}
+.b-image img {
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.5;
+}
+.shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 500px;
+    background: rgba(0,0,0,0.5);
+    pointer-events: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 100vw;
+    z-index: 2;
+    background: transparent;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 30px 0 0;
+}
+
+.nav-list li {
+    margin-left: 40px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    transition: color 0.3s;
+    padding: 0.2rem 0.7rem;
+    border-radius: 4px;
+}
+.nav-list a.active,
+.nav-list a:hover {
+    color: #DA6304;
+    background: #fff;
+}
+
+.info {
+    position: absolute;
+    top: 130px;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-text {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#button {
+    display: inline-block;
+    background-color: #942222;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+#button:hover {
+    background: #7a1818;
+}
+
+.mission, .vision {
+    display: flex;
+    align-items: center;
+    padding: 60px 5vw 0 5vw;
+    gap: 3vw;
+}
+.mission {
+    margin-top: 440px;
+}
+.mission-text, .vision-text {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    padding: 30px 24px;
+    width: 40vw;
+    min-width: 250px;
+}
+.mission-text {
+    border: 2px solid #344C2C;
+}
+.mission-text h1 { color: #344C2C; }
+.vision-text {
+    border: 2px solid #33577B;
+}
+.vision-text h1 { color: #33577B; }
+
+.mission-image, .vision-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission-image img,
+.vision-image img {
+    width: 40vw;
+    max-width: 480px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+hr {
+    border: none;
+    border-top: 2px solid #942222;
+    margin: 60px auto;
+    width: 90vw;
+}
+
+@media (max-width: 900px) {
+    .mission, .vision {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 2vw 0 2vw;
+    }
+    .mission-text, .vision-text, .mission-image img, .vision-image img {
+        width: 80vw !important;
+        min-width: unset;
+        max-width: 98vw;
+    }
+    .mission-text, .vision-text {
+        font-size: 1.1rem;
+        padding: 16px 10px;
+    }
+    .info-text {
+        font-size: 1.1rem;
+        padding: 0 10vw;
+    }
+    .b-image, .b-image img, .shade {
+        height: 260px !important;
+        min-height: 180px;
+    }
+    .info {
+        top: 50px;
+    }
+    .mission {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        top: 8px;
+        background: none;
+    }
+    .nav-list {
+        flex-direction: row;
+        gap: 10px;
+        padding: 0 0 0 10px;
+    }
+    .nav-list li {
+        margin: 0 5px;
+    }
+    .info-text {
+        font-size: 1rem;
+        padding: 0 1vw;
+    }
+    #button {
+        width: 50vw;
+        font-size: 1rem;
+        height: 32px;
+        line-height: 32px;
+    }
+    .b-image, .b-image img, .shade {
+        height: 160px !important;
+    }
+    .mission, .vision {
+        padding: 18px 2vw 0 2vw;
+        margin-top: 20px;
+    }
+    hr {
+        margin-top: 30px;
+        width: 99vw;
+    }
+}

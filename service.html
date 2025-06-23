@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html" class="active">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            </nav>
+        </header>
+        <h1 class="heading">Our Services</h1>
+        <div class="our-services">
+            <div class="first-service service-block">
+                <div class="service-img">
+                    <img src="phoneimages/first-phone.webp" id="first-phone" alt="Pick-up Service">
+                </div>
+                <div class="service-text">
+                    <h4>Pick-up</h4>
+                    <p>We give pick up services. Traders request pick up from our schedule, which has different dates and days for different locations.</p>
+                </div>
+            </div>
+            <div class="second-service service-block">
+                <div class="service-img">
+                    <img src="phoneimages/second-phone.png" id="second-phone" alt="Payment Service">
+                </div>
+                <div class="service-text">
+                    <h4>Payment</h4>
+                    <p>Receive payments and rewards when you sell clothes. Payment is based on material and quantity. Traders are rewarded when they reach a minimum of 500 points.</p>
+                </div>
+            </div>
+            <div class="recycle service-block">
+                <div class="service-img">
+                    <img src="phoneimages/Color Vector Flat Style Illustration of Recycling Old Clothes_ Stock Illustration - Illustration of center, ecological_ 160422994.jpeg"
+                        id="image" alt="Recycling Service">
+                </div>
+                <div class="service-text">
+                    <h4>Recycling</h4>
+                    <p>Recycling is our main purpose. This prevents the environment from being polluted, enhances clean living, and turns unsold clothes into profit for traders.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="service.js"></script>
+</body>
+</html>

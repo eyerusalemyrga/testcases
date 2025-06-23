@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Address Selection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <a href=""><img src="" alt="Logo"></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div class="section-header">
+        <div class="container">
+          <h2>Contact us</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- address  -->
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-info-content">
+                <h4>Address</h4>
+                <p>Mururui Rd<br>Nairobi, Kenya</p>
+              </div>
+            </div>
+            <!-- phone -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-info-content">
+                <h4>Phone number</h4>
+                <p>0742758932</p>
+              </div>
+            </div>
+            <!-- email -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-info-content">
+                <h4>Email</h4>
+                <p>mangaramuor@ecorise.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="submit-form">
+              <h4>Contact us</h4>
+              <label for="name">Name</label><br>
+              <input type="text" id="name" placeholder="name" required>
+              <br>
+              <label for="location">Location</label>
+              <br>
+              <input type="text" id="location" placeholder="location" required>
+              <br>
+              <button type="submit">Submit</button>
+              <div id="form-message"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="location">
+      <h2>Find us here</h2>
+      <p id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.927067707809!2d36.871501574066436!3d-1.2110708987773708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f164ac4bc2b%3A0xe2804ec68845a82d!2sMarurui%2FThome%20Stage!5e0!3m2!1sen!2ske!4v1749986332516!5m2!1sen!2ske"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+    <footer class="end-page">
+      <div class="footer">
+        <div class="footer-detail">
+          <h2>Contacts</h2>
+          <a href=""><i class="fa-brands fa-instagram"></i> @ecorise</a>
+        </div>
+        <div class="footer-detail">
+          <h2>Services</h2>
+          <p>Pick up</p>
+          <br>
+          <p>Awarding points</p>
+        </div>
+        <div class="footer-detail">
+          <h2>Get in touch with us</h2>
+          <a href=""><i class="fa-solid fa-envelope"></i> ecorise@gmail.com</a>
+          <br>
+          <p><i class="fa-solid fa-phone" id="call"></i> +254 707 765 345</p>
+          <br>
+          <a href=""><i class="fa-solid fa-location-dot"></i> Mururui Rd</a>
+        </div>
+      </div>
+      <hr>
+      <div class="copy-right">
+        <p><i class="fa-solid fa-copyright"></i> Copyright 2025, All Rights Reserved by ecorisecompany</p>
+      </div>
+    </footer>
+    <script src="contact.js"></script>
+  </body>
+</html>
