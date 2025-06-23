@@ -14,7 +14,7 @@ describe("Sign In Feature", () => {
       <div id="message"></div>
     `;
     localStorage.clear();
-    // Add a user for successful sign in test
+  
     localStorage.setItem("user:testuser", JSON.stringify({ username: "testuser", password: "pass123" }));
   });
 
