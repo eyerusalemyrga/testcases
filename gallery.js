@@ -14,12 +14,12 @@ function scrollRight(rowId) {
   });
 }
 
-// Attach to window for testing and global usage
+
 window.toggleMenu = toggleMenu;
 window.scrollLeft = scrollLeft;
 window.scrollRight = scrollRight;
 
-// Optional: Close nav menu when clicking outside on mobile
+
 document.addEventListener('click', function(event) {
   const navLinks = document.getElementById('navLinks');
   const hamburger = document.querySelector('.hamburger');
