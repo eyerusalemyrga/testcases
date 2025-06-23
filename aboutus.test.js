@@ -1,5 +1,4 @@
-// To run: npm install jest jsdom --save-dev
-// Add "test": "jest" to package.json
+
 
 describe('About Us Navbar', () => {
     beforeEach(() => {
