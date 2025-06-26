@@ -155,7 +155,7 @@ hr {
         padding: 30px 2vw 0 2vw;
     }
     .mission-text, .vision-text, .mission-image img, .vision-image img {
-        width: 80vw !important;
+        width: 80vw;
         min-width: unset;
         max-width: 98vw;
     }
@@ -168,7 +168,7 @@ hr {
         padding: 0 10vw;
     }
     .b-image, .b-image img, .shade {
-        height: 260px !important;
+        height: 260px;
         min-height: 180px;
     }
     .info {
@@ -206,7 +206,7 @@ hr {
         line-height: 32px;
     }
     .b-image, .b-image img, .shade {
-        height: 160px !important;
+        height: 160px;
     }
     .mission, .vision {
         padding: 18px 2vw 0 2vw;
