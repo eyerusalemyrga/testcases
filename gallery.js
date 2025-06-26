@@ -26,8 +26,8 @@ document.addEventListener('click', function(event) {
   if (
     navLinks &&
     navLinks.classList.contains('show') &&
-    !navLinks.contains(event.target) &&
-    !hamburger.contains(event.target)
+    navLinks.contains(event.target) &&
+    hamburger.contains(event.target)
   ) {
     navLinks.classList.remove('show');
   }
