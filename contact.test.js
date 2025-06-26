@@ -15,7 +15,7 @@ describe("Contact Form", () => {
         <div id="form-message"></div>
       </form>
     `;
-    // Re-initialize the script for each test
+   
     document.dispatchEvent(new Event("DOMContentLoaded"));
   });
 
@@ -28,7 +28,7 @@ describe("Contact Form", () => {
     nameInput.value = "Jane Doe";
     locationInput.value = "Nairobi";
 
-    // Submit the form
+    
     form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
 
     expect(messageDiv.textContent).toMatch(/thank you, jane doe from nairobi/i);
